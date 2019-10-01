@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang=<%= content.lang %> dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zen to go</title>
+
+  <!-- Open Graph Card -->
+  <meta property="og:url" content="<%= content.openGraph[0] %>">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zen to go">
+  <meta property="og:description" content="<%= content.openGraph[1] %>">
+  <meta property="og:image" content="images/banner.jpg">
+
+  <!-- Bootstrap Library -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS Library -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Montserrat:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/372e0bd7df.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+
+  <!-- ========== NAVBAR SECTION ========== -->
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+
+    <div class="container">
+
+      <!-- NAVBAR LOGO -->
+      <a href="#home" class="navbar-brand mr-auto"><img src="images/zentogo-logo.jpg" class="header-logo" alt="zentogo-logo"></a>
+
+      <!-- NAVBAR TOGGLER -->
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-top">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NAVBAR MENU -->
+      <div class="collapse navbar-collapse" id="nav-top">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link"><%= content.navbar[0] %></a>
+          </li>
+          <li class="nav-item">
+            <a href="#offer" class="nav-link"><%= content.navbar[1] %></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link"><%= content.navbar[2] %></a>
+          </li>
+          <li class="nav-item">
+            <a href="<%= content.navbar[3] %>" class="nav-link lang-link"><%= content.navbar[4] %></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ========== HEADER SECTION ========== -->
+
+  <header id="home" class="header-section parallax">
+
+    <!-- HEADER TITLES -->
+    <!-- <h1 class="header-title">Zen to go</h1> -->
+
+    <h2 class="header-subtitle"><%= content.header[0] %><br> <%= content.header[1] %></h2>
+
+    <!-- SOCIAL MEDIA MENU -->
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="#contact" class="social-link"><i class="far fa-envelope"></i></a>
+      </li>
+      <li class="social-item">
+        <a href="https://www.facebook.com/zen.to.go.anastasia/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </li>
+      <li class="social-item">
+        <a href="https://www.instagram.com/zen.to.go/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+
+  </header>
+
+
+  <!-- ========== ABOUT SECTION ========== -->
+
+  <section id="about" class="about-section">
+
+    <div class="row">
+
+      <!-- ABOUT SECTION IMAGE -->
+      <div class="col-lg-6">
+        <img src="images/about-img.jpg" class="about-img" alt="about-img">
+      </div>
+
+      <div class="col-lg-6">
+        <!-- ABOUT SECTION CONTENT -->
+        <h3 class="about-title"> <%= content.about[0] %> <br> <%= content.about[1] %> <br> <%= content.about[2] %></h3>
+
+        <p><%= content.about[3] %></p>
+
+        <p><%= content.about[4] %></p>
+
+        <p><%= content.about[5] %></p>
+
+        <p><%= content.about[6] %></p>
+
+        <p><%= content.about[7] %></p>
+
+        <p><%= content.about[8] %></p>
+
+        <!-- ABOUT SECTION CONTACT BUTTON -->
+        <div class="namaste-btn-container">
+          <a href="#contact" class="namaste-btn">Namaste!</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========== OFFER SECTION ========== -->
+
+  <section id="offer" class="offer-section">
+
+    <h3 class="offer-title"><%= content.offer[0] %></h3>
+
+    <div class="card mb-3">
+      <div class="row no-gutters">
+
+        <!-- OFFER SECTION IMAGE -->
+        <div class="col-lg-5">
+          <img src="images/offer-private-class-img.jpg" class="offer-img" alt="private-class-img">
+        </div>
+
+        <div class="col-lg-7 offer-container">
+          <div class="card-body">
+            <!-- OFFER SECTION CONTENT -->
+            <h4 class="card-title offer-subtitle"><%= content.offer[1] %></h4>
+            <p class="card-text card-text-price"><%= content.offer[2] %></p>
+            <p class="card-text card-text-price"><%= content.offer[3] %></p>
+            <p class="card-text card-text-description"><%= content.offer[4] %><br><%= content.offer[5] %></p>
+
+            <!-- OFFER SECTION CONTACT BUTTON -->
+            <div class="namaste-btn-container">
+              <a href="#contact" class="namaste-btn">Namaste!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========== CONTACT FORM SECTION ========== -->
+
+  <section id="contact" class="contact-section">
+
+    <!-- CONTACT SECTION TITLE -->
+    <h3 class="contact-title">Namaste!</h3>
+
+    <!-- CONTACT FORM -->
+    <form class="contact-form" action="<%= content.contact[0] %>" method="post">
+
+      <div class="form-row">
+        <div class="col-lg-6">
+          <input type="text" class="form-control" name="name" placeholder="<%= content.contact[1] %>" required>
+        </div>
+        <div class="col-lg-6">
+          <input type="email" class="form-control" name="email" placeholder="<%= content.contact[2] %>" required>
+        </div>
+      </div>
+
+      <input type="text" class="form-control" name="subject" placeholder="<%= content.contact[3] %>">
+
+      <textarea class="form-control" name="message" rows="5" placeholder="<%= content.contact[4] %>" required></textarea>
+
+      <button class="btn col contact-btn" type="submit" name="button"><%= sendBtn %></button>
+
+    </form>
+
+  </section>
+
+
+  <!-- ========== FOOTER SECTION ========== -->
+
+  <footer class="footer-section">
+
+    <!-- FOOTER LOGO -->
+    <img src="images/zentogo-logo.jpg" class="footer-logo" alt="zentogo-logo">
+
+    <!-- FOOTER INSTA LIST -->
+    <ul id="insta-feed" class="row insta-list"></ul>
+
+    <!-- FOOTER COPYRIGHT -->
+    <p class="footer-p">2019 &copy; Zen to go <br><a href="https://marineheckler.herokuapp.com" target="_blank" class="footer-link"><%= content.footer %> Marine Heckler</a></p>
+
+  </footer>
+
+  <script src="scripts/instagram.js"></script>
+
+  <!-- BOOTSTRAP SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

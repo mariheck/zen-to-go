@@ -1,0 +1,384 @@
+/* ========== GENERAL STYLING ========== */
+
+:root {
+  --primary-color: #e2efe5;
+  --secondary-color: #bf9f93;
+  --third-color: #abc9b1;
+  --dark-grey: #313131;
+  --medium-grey: #414141;
+  --title-font: 'La Belle Aurore', sans-serif;
+  --main-font: 'Montserrat', sans-serif;
+}
+
+h3 {
+  color: var(--dark-grey);
+  font-family: var(--main-font);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+section {
+  color: var(--medium-grey);
+  font-family: var(--main-font);
+  padding: 60px 10%;
+}
+
+.namaste-btn-container {
+  text-align: center;
+}
+
+.namaste-btn {
+  background-color: var(--secondary-color);
+  border: solid 1px var(--secondary-color);
+  border-radius: 40px;
+  color: #fff;
+  display: inline-block;
+  font-family: var(--main-font);
+  margin-top: 50px;
+  padding: 10px 30px;
+}
+
+.namaste-btn:hover {
+  background-color: var(--third-color);
+  border-color: var(--third-color);
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* ========== NAVBAR SECTION ========== */
+
+.navbar {
+  background-color: var(--primary-color);
+  font-family: var(--main-font);
+  padding: 0;
+}
+
+.lang-link {
+  font-weight: 700;
+}
+
+
+/* ========== HEADER SECTION ========== */
+
+.parallax {
+  background-attachment: fixed;
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding: 80px 10%;
+}
+
+.header-title {
+  font-family: var(--title-font);
+  font-size: 3.5rem;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.header-subtitle {
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 3%;
+  top: 100px;
+  z-index: 1;
+}
+
+.social-item {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.social-link {
+  color: var(--dark-grey);
+}
+
+.social-link:hover {
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+
+/* ========== ABOUT SECTION ========== */
+
+.about-img {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 7px;
+  height: 100%;
+  object-fit: cover;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+
+/* ========== OFFER SECTION ========== */
+
+.offer-section {
+  background-color: var(--secondary-color);
+}
+
+.offer-title {
+  text-align: center;
+}
+
+.offer-subtitle {
+  color: var(--dark-grey);
+  font-family: var(--main-font);
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 7px;
+}
+
+.offer-img {
+  border: solid 4px #fff;
+  border-radius: 7px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.offer-container {
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-text-price {
+  font-weight: 600;
+}
+
+.card-text-description {
+  margin-top: 30px;
+}
+
+/* ========== CONTACT SECTION ========== */
+
+.contact-form {
+  margin: auto;
+  width: 80%;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.form-control {
+  border: none;
+  border-bottom: solid 2px var(--secondary-color);
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  background-color: var(--secondary-color);
+  border: solid 1px var(--secondary-color);
+  color: #fff;
+  font-family: var(--main-font);
+}
+
+.contact-btn:hover {
+  background-color: var(--third-color);
+  border-color: var(--third-color);
+  color: #fff;
+}
+
+/* ========== FOOTER SECTION ========== */
+
+.footer-section {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.footer-logo {
+  margin: 10px 0 30px;
+}
+
+.insta-list {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+}
+
+.insta-list li {
+  margin-bottom: 30px;
+}
+
+.insta-list img {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 7px;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.insta-list img:hover {
+  -webkit-filter: opacity(50%); /* Safari 6.0 - 9.0 */
+  filter: opacity(50%);
+}
+
+.footer-p {
+  color: var(--secondary-color);
+  font-family: var(--main-font);
+  font-size: 0.9rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.footer-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--dark-grey);
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 1041px) {
+  /* OFFER SECTION */
+  .offer-img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* GENERAL STYLING */
+  section {
+    padding: 100px 5%;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .namaste-btn {
+    font-size: 2rem;
+  }
+
+  .namaste-btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+
+
+  /* NAVBAR SECTION */
+  .header-logo {
+    width: 200%;
+  }
+
+  .navbar {
+    font-size: 2.5rem;
+  }
+
+  .lang-link {
+    font-weight: 700;
+  }
+
+
+  /* HEADER SECTION */
+  .parallax {
+    background-attachment: scroll;
+    height: 1200px;
+  }
+
+  .social-list {
+    margin-top: 50px;
+    position: static;
+  }
+
+  .social-item {
+    display: inline-block;
+    font-size: 3rem;
+    padding-bottom: 0;
+    padding-right: 50px;
+  }
+
+  .social-link:hover {
+    color: var(--dark-grey);
+  }
+
+
+  /* ABOUT SECTION */
+  .about-title {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+
+  /* CONTACT SECTION */
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-btn {
+    font-size: 2rem;
+  }
+
+  .contact-btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+
+
+  /* FOOTER SECTION */
+  .footer-logo {
+    width: 18%;
+  }
+
+  .insta-list {
+    width: 90%;
+  }
+
+  .insta-list img:hover {
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+  }
+
+  .footer-p {
+    font-size: 1.3rem;
+  }
+
+  .footer-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+}
