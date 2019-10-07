@@ -13,7 +13,7 @@ exports.getCzContent = function() {
       "Offer",
       "Contact",
       "/en",
-      "en"
+      "en/cz"
     ],
     header: [
       "vše, co jste chtěli vědět o józe, ",
@@ -68,7 +68,7 @@ exports.getEnContent = function() {
       "Offer",
       "Contact",
       "/",
-      "cz"
+      "en/cz"
     ],
     header: [
       "everything you wanted to know about yoga, ",

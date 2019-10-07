@@ -19,10 +19,8 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,600|Montserrat:400,600,700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/372e0bd7df.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -56,7 +54,7 @@
             <a href="#contact" class="nav-link"><%= content.navbar[2] %></a>
           </li>
           <li class="nav-item">
-            <a href="<%= content.navbar[3] %>" class="nav-link lang-link"><%= content.navbar[4] %></a>
+            <a href="<%= content.navbar[3] %>" class="nav-link"><%= content.navbar[4] %></a>
           </li>
         </ul>
       </div>
@@ -68,23 +66,20 @@
 
   <!-- ========== HEADER SECTION ========== -->
 
-  <header id="home" class="header-section parallax">
-
-    <!-- HEADER TITLES -->
-    <!-- <h1 class="header-title">Zen to go</h1> -->
+  <header id="home" class="parallax">
 
     <h2 class="header-subtitle"><%= content.header[0] %><br> <%= content.header[1] %></h2>
 
     <!-- SOCIAL MEDIA MENU -->
     <ul class="social-list">
-      <li class="social-item">
-        <a href="#contact" class="social-link"><i class="far fa-envelope"></i></a>
+      <li>
+        <a href="#contact"><i class="far fa-envelope"></i></a>
       </li>
-      <li class="social-item">
-        <a href="https://www.facebook.com/zen.to.go.anastasia/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <li>
+        <a href="https://www.facebook.com/zen.to.go.anastasia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
       </li>
-      <li class="social-item">
-        <a href="https://www.instagram.com/zen.to.go/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+      <li>
+        <a href="https://www.instagram.com/zen.to.go/" target="_blank"><i class="fab fa-instagram"></i></a>
       </li>
     </ul>
 
@@ -93,7 +88,7 @@
 
   <!-- ========== ABOUT SECTION ========== -->
 
-  <section id="about" class="about-section">
+  <section id="about">
 
     <div class="row">
 
@@ -134,7 +129,7 @@
 
   <section id="offer" class="offer-section">
 
-    <h3 class="offer-title"><%= content.offer[0] %></h3>
+    <h3><%= content.offer[0] %></h3>
 
     <div class="card mb-3">
       <div class="row no-gutters">
@@ -147,7 +142,7 @@
         <div class="col-lg-7 offer-container">
           <div class="card-body">
             <!-- OFFER SECTION CONTENT -->
-            <h4 class="card-title offer-subtitle"><%= content.offer[1] %></h4>
+            <h4 class="card-title"><%= content.offer[1] %></h4>
             <p class="card-text card-text-price"><%= content.offer[2] %></p>
             <p class="card-text card-text-price"><%= content.offer[3] %></p>
             <p class="card-text card-text-description"><%= content.offer[4] %><br><%= content.offer[5] %></p>
@@ -167,7 +162,7 @@
 
   <!-- ========== CONTACT FORM SECTION ========== -->
 
-  <section id="contact" class="contact-section">
+  <section id="contact">
 
     <!-- CONTACT SECTION TITLE -->
     <h3 class="contact-title">Namaste!</h3>
@@ -197,7 +192,7 @@
 
   <!-- ========== FOOTER SECTION ========== -->
 
-  <footer class="footer-section">
+  <footer>
 
     <!-- FOOTER LOGO -->
     <img src="images/zentogo-logo.jpg" class="footer-logo" alt="zentogo-logo">
@@ -206,11 +201,15 @@
     <ul id="insta-feed" class="row insta-list"></ul>
 
     <!-- FOOTER COPYRIGHT -->
-    <p class="footer-p">2019 &copy; Zen to go <br><a href="https://marineheckler.herokuapp.com" target="_blank" class="footer-link"><%= content.footer %> Marine Heckler</a></p>
+    <p class="footer-p">2019 &copy; Zen to go <br><a href="https://marineheckler.com" target="_blank" class="footer-link">Made with &#10084; by Marine Heckler</a></p>
 
   </footer>
 
+
   <script src="scripts/instagram.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/372e0bd7df.js" crossorigin="anonymous"></script>
 
   <!-- BOOTSTRAP SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

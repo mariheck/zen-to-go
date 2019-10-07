@@ -1,36 +1,42 @@
 /* ========== GENERAL STYLING ========== */
 
 :root {
-  --primary-color: #e2efe5;
-  --secondary-color: #bf9f93;
-  --third-color: #abc9b1;
+  --light-green: #e2efe5;
+  --light-pink: #bf9f93;
+  --medium-green: #abc9b1;
   --dark-grey: #313131;
   --medium-grey: #414141;
-  --title-font: 'La Belle Aurore', sans-serif;
+  --title-font: 'Rokkit', serif;
   --main-font: 'Montserrat', sans-serif;
 }
 
+body {
+  color: var(--medium-grey);
+  font-family: var(--main-font);
+  margin: 0 auto;
+}
+
+/* SECTION STYLING */
 h3 {
   color: var(--dark-grey);
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 50px;
 }
 
 section {
-  color: var(--medium-grey);
-  font-family: var(--main-font);
   padding: 60px 10%;
 }
 
+/* NAMASTE BUTTON */
 .namaste-btn-container {
   text-align: center;
 }
 
 .namaste-btn {
-  background-color: var(--secondary-color);
-  border: solid 1px var(--secondary-color);
+  background-color: var(--light-pink);
+  border: solid 1px var(--light-pink);
   border-radius: 40px;
   color: #fff;
   display: inline-block;
@@ -40,8 +46,8 @@ section {
 }
 
 .namaste-btn:hover {
-  background-color: var(--third-color);
-  border-color: var(--third-color);
+  background-color: var(--medium-green);
+  border-color: var(--medium-green);
   color: #fff;
   text-decoration: none;
 }
@@ -50,13 +56,22 @@ section {
 /* ========== NAVBAR SECTION ========== */
 
 .navbar {
-  background-color: var(--primary-color);
+  background-color: var(--light-green);
   font-family: var(--main-font);
   padding: 0;
 }
 
-.lang-link {
-  font-weight: 700;
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(191, 159, 147, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(191, 159, 147, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(191, 159, 147, 1);
+  font-weight: 600;
 }
 
 
@@ -70,13 +85,6 @@ section {
   background-size: cover;
   height: 700px;
   padding: 80px 10%;
-}
-
-.header-title {
-  font-family: var(--title-font);
-  font-size: 3.5rem;
-  margin: 0;
-  margin-bottom: 30px;
 }
 
 .header-subtitle {
@@ -95,18 +103,18 @@ section {
   z-index: 1;
 }
 
-.social-item {
+.social-list li {
   font-size: 1.5rem;
   padding-bottom: 15px;
   text-align: center;
 }
 
-.social-link {
+.social-list a {
   color: var(--dark-grey);
 }
 
-.social-link:hover {
-  color: var(--third-color);
+.social-list a:hover {
+  color: var(--medium-green);
   text-decoration: none;
 }
 
@@ -127,16 +135,17 @@ section {
 /* ========== OFFER SECTION ========== */
 
 .offer-section {
-  background-color: var(--secondary-color);
+  background-color: var(--light-green);
 }
 
-.offer-title {
+.offer-section h3 {
   text-align: center;
 }
 
-.offer-subtitle {
+.offer-section h4 {
   color: var(--dark-grey);
-  font-family: var(--main-font);
+  font-family: var(--title-font);
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 50px;
   text-align: center;
@@ -172,6 +181,7 @@ section {
   margin-top: 30px;
 }
 
+
 /* ========== CONTACT SECTION ========== */
 
 .contact-form {
@@ -185,28 +195,29 @@ section {
 
 .form-control {
   border: none;
-  border-bottom: solid 2px var(--secondary-color);
+  border-bottom: solid 2px var(--light-pink);
   border-radius: 0;
   margin-bottom: 20px;
 }
 
 .contact-btn {
-  background-color: var(--secondary-color);
-  border: solid 1px var(--secondary-color);
+  background-color: var(--light-pink);
+  border: solid 1px var(--light-pink);
   color: #fff;
   font-family: var(--main-font);
 }
 
 .contact-btn:hover {
-  background-color: var(--third-color);
-  border-color: var(--third-color);
+  background-color: var(--medium-green);
+  border-color: var(--medium-green);
   color: #fff;
 }
 
+
 /* ========== FOOTER SECTION ========== */
 
-.footer-section {
-  background-color: var(--primary-color);
+footer {
+  background-color: var(--light-green);
   text-align: center;
 }
 
@@ -239,7 +250,7 @@ section {
 }
 
 .footer-p {
-  color: var(--secondary-color);
+  color: var(--light-pink);
   font-family: var(--main-font);
   font-size: 0.9rem;
   margin: 0;
@@ -247,25 +258,26 @@ section {
 }
 
 .footer-link {
-  color: var(--secondary-color);
+  color: var(--light-pink);
   text-decoration: none;
 }
 
 .footer-link:hover {
   color: var(--dark-grey);
+  text-decoration: none;
 }
 
 
 /* ========== RESPONSIVE DESIGN ========== */
 
-@media (max-width: 1041px) {
+@media only screen and (max-width: 1041px) {
   /* OFFER SECTION */
   .offer-img {
     height: 100%;
   }
 }
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
 
   /* GENERAL STYLING */
   section {
@@ -289,8 +301,8 @@ section {
   }
 
   .namaste-btn:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: var(--light-pink);
+    border-color: var(--light-pink);
   }
 
 
@@ -301,10 +313,6 @@ section {
 
   .navbar {
     font-size: 2.5rem;
-  }
-
-  .lang-link {
-    font-weight: 700;
   }
 
 
@@ -319,14 +327,14 @@ section {
     position: static;
   }
 
-  .social-item {
+  .social-list li {
     display: inline-block;
     font-size: 3rem;
     padding-bottom: 0;
     padding-right: 50px;
   }
 
-  .social-link:hover {
+  .social-list a:hover {
     color: var(--dark-grey);
   }
 
@@ -348,8 +356,8 @@ section {
   }
 
   .contact-btn:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: var(--light-pink);
+    border-color: var(--light-pink);
   }
 
 
@@ -372,12 +380,12 @@ section {
   }
 
   .footer-link {
-    color: var(--secondary-color);
+    color: var(--light-pink);
     text-decoration: none;
   }
 
   .footer-link:hover {
-    color: var(--secondary-color);
+    color: var(--light-pink);
     text-decoration: none;
   }
 
