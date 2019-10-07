@@ -66,14 +66,13 @@ app.post("/", function(req, res) {
   transporter.sendMail(mailOptions, function(error, info) {
     if(error) {
       console.log(error);
+      res.redirect("/");
     } else {
       console.log("Email sent : " + info.response);
+      sentEmail = true;
+      res.redirect("/");
     }
   });
-
-  sentEmail = true;
-
-  res.redirect("/");
 
 });
 
@@ -94,14 +93,13 @@ app.post("/en", function(req, res) {
   transporter.sendMail(mailOptions, function(error, info) {
     if(error) {
       console.log(error);
+      res.redirect("/en");
     } else {
       console.log("Email sent : " + info.response);
+      sentEmail = true;
+      res.redirect("/en");
     }
   });
-
-  sentEmail = true;
-
-  res.redirect("/en");
 
 });
 
