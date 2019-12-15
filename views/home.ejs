@@ -34,7 +34,7 @@
     <div class="container">
 
       <!-- NAVBAR LOGO -->
-      <a href="#home" class="navbar-brand mr-auto"><img src="images/zentogo-logo.jpg" class="header-logo" alt="zentogo-logo"></a>
+      <a href="#home" class="navbar-brand"><img src="images/zentogo-logo.jpg" class="header-logo" alt="zentogo-logo"></a>
 
       <!-- NAVBAR TOGGLER -->
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-top">
@@ -45,16 +45,19 @@
       <div class="collapse navbar-collapse" id="nav-top">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#about" class="nav-link"><%= content.navbar[0] %></a>
+            <a href="#intro" class="nav-link"><%= content.navbar[0] %></a>
           </li>
           <li class="nav-item">
-            <a href="#offer" class="nav-link"><%= content.navbar[1] %></a>
+            <a href="#prices" class="nav-link"><%= content.navbar[1] %></a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link"><%= content.navbar[2] %></a>
+            <a href="#about" class="nav-link"><%= content.navbar[2] %></a>
           </li>
           <li class="nav-item">
-            <a href="<%= content.navbar[3] %>" class="nav-link"><%= content.navbar[4] %></a>
+            <a href="#namaste" class="nav-link"><%= content.navbar[3] %></a>
+          </li>
+          <li class="nav-item">
+            <a href="<%= content.navbar[4] %>" class="nav-link"><%= content.navbar[5] %></a>
           </li>
         </ul>
       </div>
@@ -86,9 +89,9 @@
   </header>
 
 
-  <!-- ========== ABOUT SECTION ========== -->
+  <!-- ========== INTRO SECTION ========== -->
 
-  <section id="about">
+  <section id="intro">
 
     <div class="row">
 
@@ -99,19 +102,19 @@
 
       <div class="col-lg-6">
         <!-- ABOUT SECTION CONTENT -->
-        <h3 class="about-title"> <%= content.about[0] %> <br> <%= content.about[1] %> <br> <%= content.about[2] %></h3>
+        <h3 class="about-title"> <%= content.intro[0] %> <br> <%= content.intro[1] %> <br> <%= content.intro[2] %></h3>
 
-        <p><%= content.about[3] %></p>
+        <p><%= content.intro[3] %></p>
 
-        <p><%= content.about[4] %></p>
+        <p><%= content.intro[4] %></p>
 
-        <p><%= content.about[5] %></p>
+        <p><%= content.intro[5] %></p>
 
-        <p><%= content.about[6] %></p>
+        <p><%= content.intro[6] %></p>
 
-        <p><%= content.about[7] %></p>
+        <p><%= content.intro[7] %></p>
 
-        <p><%= content.about[8] %></p>
+        <p><%= content.intro[8] %></p>
 
         <!-- ABOUT SECTION CONTACT BUTTON -->
         <div class="namaste-btn-container">
@@ -125,11 +128,11 @@
   </section>
 
 
-  <!-- ========== OFFER SECTION ========== -->
+  <!-- ========== PRICES SECTION ========== -->
 
-  <section id="offer" class="offer-section">
+  <section id="prices" class="offer-section">
 
-    <h3><%= content.offer[0] %></h3>
+    <h3><%= content.prices[0] %></h3>
 
     <div class="card mb-3">
       <div class="row no-gutters">
@@ -142,10 +145,10 @@
         <div class="col-lg-7 offer-container">
           <div class="card-body">
             <!-- OFFER SECTION CONTENT -->
-            <h4 class="card-title"><%= content.offer[1] %></h4>
-            <p class="card-text card-text-price"><%= content.offer[2] %></p>
-            <p class="card-text card-text-price"><%= content.offer[3] %></p>
-            <p class="card-text card-text-description"><%= content.offer[4] %><br><%= content.offer[5] %></p>
+            <h4 class="card-title"><%= content.prices[1] %></h4>
+            <p class="card-text card-text-price"><%= content.prices[2] %></p>
+            <p class="card-text card-text-price"><%= content.prices[3] %></p>
+            <p class="card-text card-text-description"><%= content.prices[4] %><br><%= content.prices[5] %></p>
 
             <!-- OFFER SECTION CONTACT BUTTON -->
             <div class="namaste-btn-container">
@@ -160,9 +163,21 @@
   </section>
 
 
+  <!-- ========== ABOUT ME SECTION ========== -->
+
+  <section id="about">
+
+    <h3><%= content.about[0] %></h3>
+    <p><%= content.about[1] %></p>
+    <p><%= content.about[2] %></p>
+    <p><%= content.about[3] %></p>
+
+  </section>
+
+
   <!-- ========== CONTACT FORM SECTION ========== -->
 
-  <section id="contact">
+  <section id="namaste">
 
     <!-- CONTACT SECTION TITLE -->
     <h3 class="contact-title">Namaste!</h3>
@@ -204,6 +219,7 @@
     <p class="footer-p">2019 &copy; Zen to go <br><a href="https://marineheckler.com" target="_blank" class="footer-link">Made with &#10084; by Marine Heckler</a></p>
 
   </footer>
+
 
 
   <script src="scripts/instagram.js"></script>

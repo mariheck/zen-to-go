@@ -83,7 +83,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 100vh;
   padding: 80px 10%;
 }
 
@@ -119,7 +119,7 @@ section {
 }
 
 
-/* ========== ABOUT SECTION ========== */
+/* ========== INTRO SECTION ========== */
 
 .about-img {
   background-color: #fff;
@@ -132,7 +132,7 @@ section {
 }
 
 
-/* ========== OFFER SECTION ========== */
+/* ========== PRICES SECTION ========== */
 
 .offer-section {
   background-color: var(--light-green);
