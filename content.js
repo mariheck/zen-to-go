@@ -5,7 +5,7 @@ exports.getCzContent = function() {
   const czContent = {
     lang: "cs-CZ",
     openGraph: [
-      "https://secure-anchorage-50638.herokuapp.com/",
+      "https://immense-anchorage-89476.herokuapp.com",
       "Vše, co jste chtěli vědět o józe, ale báli se zeptat.",
     ],
     navbar: [
@@ -67,7 +67,7 @@ exports.getEnContent = function() {
   const enContent = {
     lang: "en",
     openGraph: [
-      "https://secure-anchorage-50638.herokuapp.com/en",
+      "https://immense-anchorage-89476.herokuapp.com/en",
       "Everything you wanted to know about yoga, but were afraid to ask",
     ],
     navbar: [
