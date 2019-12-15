@@ -33,7 +33,9 @@
     <div class="container">
 
       <!-- NAVBAR LOGO -->
-      <a href="#home" class="navbar-brand"><h1>Zen to go</h1><img src="images/zentogo-logo.jpg" class="header-logo" alt="zentogo-logo"></a>
+      <a href="#home" class="navbar-brand">
+        <h1>Zen to go</h1><img src="images/zentogo-logo.jpg" class="header-logo" alt="zentogo-logo">
+      </a>
 
       <!-- NAVBAR TOGGLER -->
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-top">
@@ -92,73 +94,63 @@
 
   <section id="intro">
 
-    <div class="row">
+    <div class="container">
+      <div class="row">
 
-      <!-- INTRO SECTION IMAGE -->
-      <div class="col-lg-6">
-        <img src="images/about-img.jpg" class="about-img" alt="about-img">
-      </div>
+        <!-- INTRO SECTION IMAGE -->
+        <div class="col-lg-6">
+          <img src="images/intro-img.jpg" class="section-img" alt="intro-img">
+        </div>
 
-      <div class="col-lg-6">
         <!-- INTRO SECTION CONTENT -->
-        <h3 class="about-title"> <%= content.intro[0] %> <br> <%= content.intro[1] %> <br> <%= content.intro[2] %></h3>
+        <div class="col-lg-6">
+          <h3 class="about-title"> <%= content.intro[0] %> <br> <%= content.intro[1] %> <br> <%= content.intro[2] %></h3>
 
-        <p><%= content.intro[3] %></p>
+          <p><%= content.intro[3] %></p>
+          <p><%= content.intro[4] %></p>
+          <p><%= content.intro[5] %></p>
+          <p><%= content.intro[6] %></p>
+          <p><%= content.intro[7] %></p>
+          <p><%= content.intro[8] %></p>
 
-        <p><%= content.intro[4] %></p>
+          <!-- INTRO SECTION CONTACT BUTTON -->
+          <div class="namaste-btn-container">
+            <a href="#contact" class="namaste-btn">Namaste!</a>
+          </div>
 
-        <p><%= content.intro[5] %></p>
-
-        <p><%= content.intro[6] %></p>
-
-        <p><%= content.intro[7] %></p>
-
-        <p><%= content.intro[8] %></p>
-
-        <!-- ABOUT SECTION CONTACT BUTTON -->
-        <div class="namaste-btn-container">
-          <a href="#contact" class="namaste-btn">Namaste!</a>
         </div>
 
       </div>
-
     </div>
-
   </section>
 
 
   <!-- ========== PRICES SECTION ========== -->
 
-  <section id="prices" class="offer-section">
+  <section id="prices">
 
-    <h3><%= content.prices[0] %></h3>
+    <div class="container">
+      <div class="card mb-3">
 
-    <div class="card mb-3">
-      <div class="row no-gutters">
+        <!-- PRICES SECTION IMAGE -->
+        <img class="card-img-top prices-img" src="images/prices-img.jpg" alt="prices-img">
 
-        <!-- OFFER SECTION IMAGE -->
-        <div class="col-lg-5">
-          <img src="images/offer-private-class-img.jpg" class="offer-img" alt="private-class-img">
-        </div>
+        <!-- PRICES SECTION CONTENT -->
+        <div class="card-body">
+          <h3 class="card-title"><%= content.prices[0] %></h3>
+          <p class="card-text card-text-price"><%= content.prices[1] %></p>
+          <p class="card-text card-text-price"><%= content.prices[2] %></p>
+          <p class="card-text card-text-description"><%= content.prices[3] %><br><%= content.prices[4] %></p>
 
-        <div class="col-lg-7 offer-container">
-          <div class="card-body">
-            <!-- OFFER SECTION CONTENT -->
-            <h4 class="card-title"><%= content.prices[1] %></h4>
-            <p class="card-text card-text-price"><%= content.prices[2] %></p>
-            <p class="card-text card-text-price"><%= content.prices[3] %></p>
-            <p class="card-text card-text-description"><%= content.prices[4] %><br><%= content.prices[5] %></p>
-
-            <!-- OFFER SECTION CONTACT BUTTON -->
-            <div class="namaste-btn-container">
-              <a href="#contact" class="namaste-btn">Namaste!</a>
-            </div>
+          <!-- PRICES SECTION CONTACT BUTTON -->
+          <div class="namaste-btn-container">
+            <a href="#contact" class="namaste-btn">Namaste!</a>
           </div>
         </div>
 
       </div>
-
     </div>
+
   </section>
 
 
@@ -166,28 +158,30 @@
 
   <section id="about">
 
-    <div class="row">
+    <div class="container">
+      <div class="row">
 
-      <!-- ABOUT SECTION IMAGE -->
-      <div class="col-lg-6">
-        <img src="images/about-img.jpg" class="about-img" alt="about-img">
-      </div>
+        <!-- ABOUT SECTION IMAGE -->
+        <div class="col-lg-6">
+          <img src="images/about-img.jpg" class="section-img" alt="about-img">
+        </div>
 
-      <div class="col-lg-6">
-        <!-- ABOUT SECTION CONTENT -->
-        <h3 class="about-title"> <%= content.about[0] %></h3>
+        <div class="col-lg-6">
+          <!-- ABOUT SECTION CONTENT -->
+          <h3 class="about-title"> <%= content.about[0] %></h3>
 
-        <p><%= content.about[1] %></p>
-        <p><%= content.about[2] %></p>
-        <p><%= content.about[3] %></p>
+          <p><%= content.about[1] %></p>
+          <p><%= content.about[2] %></p>
+          <p><%= content.about[3] %> <a href="http://www.ashiyanayogaschool.in/" target="_blank">Ashiyana yoga school</a> <%= content.about[4] %></p>
 
-        <!-- ABOUT SECTION CONTACT BUTTON -->
-        <div class="namaste-btn-container">
-          <a href="#contact" class="namaste-btn">Namaste!</a>
+          <!-- ABOUT SECTION CONTACT BUTTON -->
+          <div class="namaste-btn-container">
+            <a href="#contact" class="namaste-btn">Namaste!</a>
+          </div>
+
         </div>
 
       </div>
-
     </div>
 
   </section>
@@ -197,28 +191,34 @@
 
   <section id="namaste">
 
-    <!-- CONTACT SECTION TITLE -->
-    <h3 class="contact-title">Namaste!</h3>
+    <div class="container">
 
-    <!-- CONTACT FORM -->
-    <form class="contact-form" action="<%= content.contact[0] %>" method="post">
+      <div class="contact-card">
+        <!-- CONTACT SECTION TITLE -->
+        <h3>Namaste!</h3>
 
-      <div class="form-row">
-        <div class="col-lg-6">
-          <input type="text" class="form-control" name="name" placeholder="<%= content.contact[1] %>" required>
-        </div>
-        <div class="col-lg-6">
-          <input type="email" class="form-control" name="email" placeholder="<%= content.contact[2] %>" required>
-        </div>
+        <!-- CONTACT FORM -->
+        <form action="<%= content.contact[0] %>" method="post">
+
+          <div class="form-row">
+            <div class="col-lg-6">
+              <input type="text" class="form-control" name="name" placeholder="<%= content.contact[1] %>" required>
+            </div>
+            <div class="col-lg-6">
+              <input type="email" class="form-control" name="email" placeholder="<%= content.contact[2] %>" required>
+            </div>
+          </div>
+
+          <input type="text" class="form-control" name="subject" placeholder="<%= content.contact[3] %>">
+
+          <textarea class="form-control" name="message" rows="5" placeholder="<%= content.contact[4] %>" required></textarea>
+
+          <button class="btn col contact-btn" type="submit" name="button"><%= sendBtn %></button>
+
+        </form>
       </div>
 
-      <input type="text" class="form-control" name="subject" placeholder="<%= content.contact[3] %>">
-
-      <textarea class="form-control" name="message" rows="5" placeholder="<%= content.contact[4] %>" required></textarea>
-
-      <button class="btn col contact-btn" type="submit" name="button"><%= sendBtn %></button>
-
-    </form>
+    </div>
 
   </section>
 
@@ -234,7 +234,7 @@
     <ul id="insta-feed" class="row insta-list"></ul>
 
     <!-- FOOTER COPYRIGHT -->
-    <p class="footer-p">2019 &copy; Zen to go <br><a href="https://marineheckler.com" target="_blank" class="footer-link">Made with &#10084; by Marine Heckler</a></p>
+    <p>2019 &copy; Zen to go <br><a href="https://marineheckler.com" target="_blank">Made with &#10084; by Marine Heckler</a></p>
 
   </footer>
 

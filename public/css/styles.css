@@ -20,7 +20,19 @@ h1 {
   display: none;
 }
 
-/* SECTION STYLING */
+a {
+  color: var(--light-pink);
+}
+
+a:hover {
+  color: var(--medium-green);
+}
+
+a:visited {
+  color: var(--light-pink);
+}
+
+/*** SECTION STYLING ***/
 h3 {
   color: var(--dark-grey);
   font-family: var(--title-font);
@@ -30,10 +42,22 @@ h3 {
 }
 
 section {
-  padding: 60px 10%;
+  padding: 60px 0;
 }
 
-/* NAMASTE BUTTON */
+/*** SECTION IMAGES ***/
+.section-img {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 7px;
+  height: 100%;
+  object-fit: cover;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+
+/*** NAMASTE BUTTON ***/
 .namaste-btn-container {
   text-align: center;
 }
@@ -46,6 +70,7 @@ section {
   display: inline-block;
   font-family: var(--main-font);
   margin-top: 50px;
+  margin-bottom: 0.25rem;
   padding: 10px 30px;
 }
 
@@ -60,7 +85,7 @@ section {
 /* ========== NAVBAR SECTION ========== */
 
 .header-logo {
-  width: 110px;
+  width: 100px;
 }
 
 .navbar {
@@ -101,7 +126,7 @@ section {
   font-family: var(--main-font);
   font-size: 1.2rem;
   font-style: italic;
-  margin-left: 40%;
+  margin-left: 45%;
   margin-top: 10%;
   text-align: center;
 }
@@ -112,7 +137,7 @@ section {
   padding: 0;
   position: fixed;
   right: 1.5%;
-  top: 15%;
+  top: 95px;
   z-index: 1;
 }
 
@@ -136,35 +161,15 @@ section {
 }
 
 
-/* ========== INTRO SECTION ========== */
-
-.about-img {
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 7px;
-  height: 100%;
-  object-fit: cover;
-  padding: 0.25rem;
-  width: 100%;
-}
-
-
 /* ========== PRICES SECTION ========== */
 
-.offer-section {
+#prices {
   background-color: var(--light-green);
 }
 
-.offer-section h3 {
-  text-align: center;
-}
-
-.offer-section h4 {
-  color: var(--dark-grey);
-  font-family: var(--title-font);
-  font-size: 1.8rem;
-  font-weight: 600;
+#prices h3 {
   margin-bottom: 50px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -173,17 +178,11 @@ section {
   border-radius: 7px;
 }
 
-.offer-img {
+.prices-img {
   border: solid 4px #fff;
   border-radius: 7px;
   object-fit: cover;
   width: 100%;
-}
-
-.offer-container {
-  margin: auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
 }
 
 .card-body {
@@ -201,13 +200,25 @@ section {
 
 /* ========== CONTACT SECTION ========== */
 
-.contact-form {
-  margin: auto;
-  width: 80%;
+#namaste {
+  background-color: rgba(191, 159, 147, 1);
 }
 
-.contact-title {
+.contact-card {
+  background-color: #fff;
+  /* border: 1px solid #fff; */
+  border-radius: 0.25rem;
+  margin: auto;
+  padding: 50px;
+}
+
+#namaste h3 {
   text-align: center;
+}
+
+#namaste form {
+  margin: auto;
+  width: 100%;
 }
 
 .form-control {
@@ -266,7 +277,7 @@ footer {
   filter: opacity(50%);
 }
 
-.footer-p {
+footer p {
   color: var(--light-pink);
   font-family: var(--main-font);
   font-size: 0.9rem;
@@ -274,12 +285,12 @@ footer {
   padding-bottom: 10px;
 }
 
-.footer-link {
+footer a {
   color: var(--light-pink);
   text-decoration: none;
 }
 
-.footer-link:hover {
+footer a:hover {
   color: var(--dark-grey);
   text-decoration: none;
 }
@@ -287,18 +298,11 @@ footer {
 
 /* ========== RESPONSIVE DESIGN ========== */
 
-@media only screen and (max-width: 1041px) {
-  /* OFFER SECTION */
-  .offer-img {
-    height: 100%;
-  }
-}
-
 @media only screen and (max-width: 992px) {
 
   /* GENERAL STYLING */
   section {
-    padding: 100px 5%;
+    padding: 100px 0;
   }
 
   h3 {

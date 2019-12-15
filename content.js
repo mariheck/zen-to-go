@@ -21,7 +21,7 @@ exports.getCzContent = function() {
       "ale báli se zeptat"
     ],
     intro: [
-      "Vinyasa / Hatha Flow",
+      "Vinyasa - Hatha Flow",
       "Pranayama",
       "Meditace",
       "Chcete na chvíli pozastavit mysl a naučit se vnímat přítomný okamžik?",
@@ -33,7 +33,6 @@ exports.getCzContent = function() {
     ],
     prices: [
       "Individualní Lekce",
-      "Ceny",
       "60 min - 700 Kč",
       "90 min - 900 Kč",
       "Lekce na míru, individuální přístup. ",
@@ -43,7 +42,8 @@ exports.getCzContent = function() {
       "O Mně",
       "Jmenuju se Anastasia a moje cesta k józe začala před 13 léty, kdy mě maminka přivedla na lekci ashtanga vinyasa jógy, abych něco dělala se skoliózou. Nebyla to láska na první pohled, ale to u jógy bývá. Na začátku prostě nevěříte, že pes hlavou dolů je relaxační pozice. :)",
       "Nejsem rigidní v praxi ani výuce jógy, fascinují mě odlišné styly, anatomie jógy, práce s dechem a energií, meditační techniky a v neposlední řadě filosofie a mytologie.",
-      "Učit jsem začala v roce 2019 po dokončení učitelského kurzu v Ashiyana yoga school (http://www.ashiyanayogaschool.in/) v Indii. To, co mě na výuce baví je individuální práce se studenty, adjustmenty a vytvoření empatického prostředí. Proto učím inividuální lekce a malé skupiny."
+      "Učit jsem začala v roce 2019 po dokončení učitelského kurzu v ",
+      " v Indii. To, co mě na výuce baví je individuální práce se studenty, adjustmenty a vytvoření empatického prostředí. Proto učím inividuální lekce a malé skupiny."
     ],
     contact: [
       "/#contact",
@@ -83,7 +83,7 @@ exports.getEnContent = function() {
       "but were afraid to ask"
     ],
     intro: [
-      "Vinyasa / Hatha Flow",
+      "Vinyasa - Hatha Flow",
       "Pranayama",
       "Meditation",
       "Do you want to stop the fluctuations of your mind and be present?",
@@ -95,7 +95,6 @@ exports.getEnContent = function() {
     ],
     prices: [
       "Private Classes",
-      "Prices",
       "60 min - 700 Kč",
       "90 min - 900 Kč",
       "Individual approach, the classes are tailored to your needs.",
@@ -103,9 +102,10 @@ exports.getEnContent = function() {
     ],
     about: [
       "About Me",
-      "My name is Anastasia and my path to yoga has begun 13 years ago when my mother brought me to ashtanga vinyasa class, so I could improve my scoliosis. It wasn't love at first sight. But that's pretty usual with yoga. At the beginning you simply don't believe thta downward facing dog is a relaxing pose. :)",
+      "My name is Anastasia and my path to yoga has begun 13 years ago when my mother brought me to ashtanga vinyasa class, so I could improve my scoliosis. It wasn't love at first sight. But that's pretty usual with yoga. At the beginning you simply don't believe that downward facing dog is a relaxing pose. :)",
       "I am not rigid nor in my own practice, neither in my teaching. I am fascinated by different styles, yoga anatomy, working with breath and energy, meditation techniques and last, but not least, philosophy and mythology.",
-      "I have started to teach in 2019 after completing my yoga teacher training in Ashiyana yoga school  (http://www.ashiyanayogaschool.in/) in India. What I love about teaching is individual work with my students, adjustments and creation of safe nurturing space. That's why I teach individual classes and tiny groups."
+      "I have started to teach in 2019 after completing my yoga teacher training in ",
+      " in India. What I love about teaching is individual work with my students, adjustments and creation of safe nurturing space. That's why I teach individual classes and tiny groups."
     ],
     contact: [
       "/en#contact",
