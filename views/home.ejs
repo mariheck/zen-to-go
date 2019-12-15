@@ -15,12 +15,11 @@
   <!-- Bootstrap Library -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- CSS Library -->
-  <link rel="stylesheet" href="css/styles.css">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,600|Montserrat:400,600,700&display=swap" rel="stylesheet">
 
+  <!-- CSS Library -->
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -34,7 +33,7 @@
     <div class="container">
 
       <!-- NAVBAR LOGO -->
-      <a href="#home" class="navbar-brand"><img src="images/zentogo-logo.jpg" class="header-logo" alt="zentogo-logo"></a>
+      <a href="#home" class="navbar-brand"><h1>Zen to go</h1><img src="images/zentogo-logo.jpg" class="header-logo" alt="zentogo-logo"></a>
 
       <!-- NAVBAR TOGGLER -->
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-top">
@@ -76,7 +75,7 @@
     <!-- SOCIAL MEDIA MENU -->
     <ul class="social-list">
       <li>
-        <a href="#contact"><i class="far fa-envelope"></i></a>
+        <a href="#namaste"><i class="far fa-envelope"></i></a>
       </li>
       <li>
         <a href="https://www.facebook.com/zen.to.go.anastasia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -95,13 +94,13 @@
 
     <div class="row">
 
-      <!-- ABOUT SECTION IMAGE -->
+      <!-- INTRO SECTION IMAGE -->
       <div class="col-lg-6">
         <img src="images/about-img.jpg" class="about-img" alt="about-img">
       </div>
 
       <div class="col-lg-6">
-        <!-- ABOUT SECTION CONTENT -->
+        <!-- INTRO SECTION CONTENT -->
         <h3 class="about-title"> <%= content.intro[0] %> <br> <%= content.intro[1] %> <br> <%= content.intro[2] %></h3>
 
         <p><%= content.intro[3] %></p>
@@ -167,10 +166,29 @@
 
   <section id="about">
 
-    <h3><%= content.about[0] %></h3>
-    <p><%= content.about[1] %></p>
-    <p><%= content.about[2] %></p>
-    <p><%= content.about[3] %></p>
+    <div class="row">
+
+      <!-- ABOUT SECTION IMAGE -->
+      <div class="col-lg-6">
+        <img src="images/about-img.jpg" class="about-img" alt="about-img">
+      </div>
+
+      <div class="col-lg-6">
+        <!-- ABOUT SECTION CONTENT -->
+        <h3 class="about-title"> <%= content.about[0] %></h3>
+
+        <p><%= content.about[1] %></p>
+        <p><%= content.about[2] %></p>
+        <p><%= content.about[3] %></p>
+
+        <!-- ABOUT SECTION CONTACT BUTTON -->
+        <div class="namaste-btn-container">
+          <a href="#contact" class="namaste-btn">Namaste!</a>
+        </div>
+
+      </div>
+
+    </div>
 
   </section>
 
