@@ -138,29 +138,25 @@ header h2 {
 .social-list {
   list-style: none;
   margin: 0;
+  margin-left: 45%;
+  margin-top: 20px;
   padding: 0;
-  position: fixed;
-  right: 0.7%;
-  top: 95px;
-  z-index: 1;
-}
-
-.social-list li {
-  font-size: 1.7rem;
-  padding-bottom: 15px;
   text-align: center;
 }
 
-.social-list li:last-of-type {
-  padding-bottom: 5px;
+.social-list li {
+  display: inline;
+  font-size: 1.7rem;
+  padding-bottom: 15px;
+  padding: 10px;
 }
 
 .social-list a {
-  color: var(--medium-grey);
+  color: rgba(65,65,65,0.5);
 }
 
 .social-list a:hover {
-  color: var(--dark-grey);
+  color: var(--medium-grey);
   text-decoration: none;
 }
 
@@ -349,20 +345,20 @@ footer a:hover {
 
   header h2 {
     font-size: 2rem;
-    margin: 15% auto;
+    margin: 15% auto 0;
   }
 
   .social-list {
-    right: 1%;
-    top: 200px;
+    margin: 50px auto;
   }
 
   .social-list li {
     font-size: 3rem;
+    padding: 20px;
   }
 
   .social-list a:hover {
-    color: var(--medium-grey);
+    color: rgba(65,65,65,0.5);
   }
 
 
