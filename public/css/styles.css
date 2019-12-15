@@ -20,18 +20,6 @@ h1 {
   display: none;
 }
 
-a {
-  color: var(--light-pink);
-}
-
-a:hover {
-  color: var(--medium-green);
-}
-
-a:visited {
-  color: var(--light-pink);
-}
-
 button:focus {
   outline: 0;
 }
@@ -195,6 +183,21 @@ header h2 {
 
 .card-text-description {
   margin-top: 30px;
+}
+
+
+/* ========== ABOUT SECTION ========== */
+
+#about p a {
+  color: var(--light-pink);
+}
+
+#about p a:hover {
+  color: var(--medium-green);
+}
+
+#about p a:visited {
+  color: var(--light-pink);
 }
 
 
