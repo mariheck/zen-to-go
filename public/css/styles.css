@@ -32,6 +32,10 @@ a:visited {
   color: var(--light-pink);
 }
 
+button:focus {
+  outline: 0;
+}
+
 /*** SECTION STYLING ***/
 h3 {
   color: var(--dark-grey);
@@ -121,8 +125,8 @@ section {
   padding: 80px 10%;
 }
 
-.header-subtitle {
-  color: rgba(255,255,255,0.5);
+header h2 {
+  color: rgba(65,65,65,0.5);
   font-family: var(--main-font);
   font-size: 1.2rem;
   font-style: italic;
@@ -136,7 +140,7 @@ section {
   margin: 0;
   padding: 0;
   position: fixed;
-  right: 1.5%;
+  right: 0.7%;
   top: 95px;
   z-index: 1;
 }
@@ -152,11 +156,11 @@ section {
 }
 
 .social-list a {
-  color: rgba(191, 159, 147, 0.65);
+  color: var(--medium-grey);
 }
 
 .social-list a:hover {
-  color: var(--light-pink);
+  color: var(--dark-grey);
   text-decoration: none;
 }
 
@@ -343,35 +347,33 @@ footer a:hover {
     height: 1200px;
   }
 
+  header h2 {
+    font-size: 2rem;
+    margin: 15% auto;
+  }
+
   .social-list {
-    margin-top: 50px;
-    position: static;
+    right: 1%;
+    top: 200px;
   }
 
   .social-list li {
-    display: inline-block;
     font-size: 3rem;
-    padding-bottom: 0;
-    padding-right: 50px;
   }
 
   .social-list a:hover {
-    color: var(--dark-grey);
+    color: var(--medium-grey);
   }
 
 
-  /* ABOUT SECTION */
-  .about-title {
+  /* INTRO SECTION + ABOUT SECTION */
+  #intro h3, #about h3 {
     margin-top: 50px;
     text-align: center;
   }
 
 
   /* CONTACT SECTION */
-  .contact-form {
-    width: 100%;
-  }
-
   .contact-btn {
     font-size: 2rem;
   }
@@ -396,18 +398,17 @@ footer a:hover {
     filter: none;
   }
 
-  .footer-p {
+  footer p {
     font-size: 1.3rem;
   }
 
-  .footer-link {
+  footer a{
     color: var(--light-pink);
     text-decoration: none;
   }
 
-  .footer-link:hover {
+  footer a:hover {
     color: var(--light-pink);
-    text-decoration: none;
   }
 
 }
