@@ -322,6 +322,7 @@ footer a:hover {
 
   .namaste-btn {
     font-size: 2rem;
+    margin-bottom: 50px;
   }
 
   .namaste-btn:hover {
@@ -367,7 +368,6 @@ footer a:hover {
 
   /* INTRO SECTION + ABOUT SECTION */
   #intro h3, #about h3 {
-    margin-top: 50px;
     text-align: center;
   }
 

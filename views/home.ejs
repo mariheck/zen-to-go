@@ -97,13 +97,8 @@
     <div class="container">
       <div class="row">
 
-        <!-- INTRO SECTION IMAGE -->
-        <div class="col-lg-6">
-          <img src="images/intro-img.jpg" class="section-img" alt="intro-img">
-        </div>
-
         <!-- INTRO SECTION CONTENT -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-lg-2">
           <h3 class="about-title"> <%= content.intro[0] %> <br> <%= content.intro[1] %> <br> <%= content.intro[2] %></h3>
 
           <p><%= content.intro[3] %></p>
@@ -120,6 +115,11 @@
 
         </div>
 
+        <!-- INTRO SECTION IMAGE -->
+        <div class="col-lg-6 order-lg-1">
+          <img src="images/intro-img.jpg" class="section-img" alt="intro-img">
+        </div>
+
       </div>
     </div>
   </section>
@@ -130,21 +130,26 @@
   <section id="prices">
 
     <div class="container">
-      <div class="card mb-3">
+      <div class="card">
+        <div class="row">
+          <!-- PRICES SECTION CONTENT -->
+          <div class="col-lg-6">
+            <div class="card-body">
+              <h3 class="card-title mt-lg-5"><%= content.prices[0] %></h3>
+              <p class="card-text card-text-price"><%= content.prices[1] %></p>
+              <p class="card-text card-text-price"><%= content.prices[2] %></p>
+              <p class="card-text card-text-description"><%= content.prices[3] %><br><%= content.prices[4] %></p>
 
-        <!-- PRICES SECTION IMAGE -->
-        <img class="card-img-top prices-img" src="images/prices-img.jpg" alt="prices-img">
+              <!-- PRICES SECTION CONTACT BUTTON -->
+              <div class="namaste-btn-container">
+                <a href="#namaste" class="namaste-btn">Namaste!</a>
+              </div>
+            </div>
+          </div>
 
-        <!-- PRICES SECTION CONTENT -->
-        <div class="card-body">
-          <h3 class="card-title"><%= content.prices[0] %></h3>
-          <p class="card-text card-text-price"><%= content.prices[1] %></p>
-          <p class="card-text card-text-price"><%= content.prices[2] %></p>
-          <p class="card-text card-text-description"><%= content.prices[3] %><br><%= content.prices[4] %></p>
-
-          <!-- PRICES SECTION CONTACT BUTTON -->
-          <div class="namaste-btn-container">
-            <a href="#namaste" class="namaste-btn">Namaste!</a>
+          <!-- PRICES SECTION IMAGE -->
+          <div class="col-lg-6">
+            <img class="section-img" src="images/prices-img.jpg" alt="prices-img">
           </div>
         </div>
 
@@ -161,13 +166,8 @@
     <div class="container">
       <div class="row">
 
-        <!-- ABOUT SECTION IMAGE -->
-        <div class="col-lg-6">
-          <img src="images/about-img.jpg" class="section-img" alt="about-img">
-        </div>
-
-        <div class="col-lg-6">
-          <!-- ABOUT SECTION CONTENT -->
+        <!-- ABOUT SECTION CONTENT -->
+        <div class="col-lg-6 order-lg-2">
           <h3 class="about-title"> <%= content.about[0] %></h3>
 
           <p><%= content.about[1] %></p>
@@ -179,6 +179,11 @@
             <a href="#namaste" class="namaste-btn">Namaste!</a>
           </div>
 
+        </div>
+
+        <!-- ABOUT SECTION IMAGE -->
+        <div class="col-lg-6 order-lg-1">
+          <img src="images/about-img.jpg" class="section-img" alt="about-img">
         </div>
 
       </div>
