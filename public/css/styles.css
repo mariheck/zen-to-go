@@ -169,6 +169,7 @@ header h2 {
 .prices-img {
   border: solid 4px #fff;
   border-radius: 7px;
+  height: 100%;
   object-fit: cover;
   width: 100%;
 }
